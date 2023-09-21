@@ -6,9 +6,12 @@
   "main": "index.js",
   "scripts": {
     "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:run": "vitest run",
     "test:browser": "vitest --browser=chromium",
     "test:types": "vitest typecheck",
     "test:bail": "vitest run --bail 1"
+    
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.1.2",
@@ -24,6 +27,6 @@
     "vue": "^3.3.4"
   },
   "stackblitz": {
-    "startCommand": "npm run test:ui"
+    "startCommand": "pnpm run test:ui"
   }
 }
